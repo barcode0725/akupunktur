@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inaya Akupuntur Slawi</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#eaf6f6;
+}
+
+/* HEADER */
+header{
+background:#6abf69;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* NAV */
+nav{
+background:#81c784;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 15px;
+position:relative;
+}
+
+.logo{
+color:white;
+font-weight:bold;
+}
+
+/* MENU */
+.menu{
+display:flex;
+gap:15px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* MOBILE */
+.menu-toggle{
+display:none;
+font-size:24px;
+color:white;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+width:100%;
+background:#81c784;
+padding:15px;
+z-index:999;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.menu a{
+padding:10px;
+border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.menu.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
+
+/* HERO */
+.hero{
+padding:80px 20px;
+text-align:center;
+background:
+linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),
+url('https://images.unsplash.com/photo-1550831107-1553da8c8464') center/cover;
+}
+
+.hero h2{
+color:#2f5d50;
+font-size:26px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#444;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:15px;
+background:#ff914d;
+padding:12px 20px;
+color:white;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTION */
+.section{
+padding:50px 20px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:15px;
+width:260px;
+border-radius:15px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* LEGAL */
+.legal img{
+width:200px;
+margin:10px;
+border-radius:10px;
+}
+
+/* MAP */
+.map iframe{
+width:100%;
+max-width:600px;
+height:300px;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+background:#6abf69;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* WA FLOAT */
+.wa{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Inaya Akupuntur Slawi</h2>
+<p>Terapi Tradisional untuk Kesehatan Optimal</p>
+</header>
+
+<nav>
+<div class="logo">LOGO</div>
+
+<div class="menu" id="menu">
+<a href="#home">Home</a>
+<a href="#layanan">Layanan</a>
+<a href="#kenapa">Kenapa Kami</a>
+<a href="#testimoni">Testimoni</a>
+<a href="#legalitas">Legalitas</a>
+<a href="#kontak">Kontak</a>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h2>Atasi Nyeri, Pegal & Masalah Saraf dengan Akupuntur</h2>
+<p>Terapi aman tanpa obat kimia & terpercaya</p>
+
+<a href="https://wa.me/62812xxxxxxx" class="btn">
+Chat WA Sekarang
+</a>
+</section>
+
+<!-- LAYANAN -->
+<section class="section" id="layanan">
+<h2>Layanan Kami</h2>
+
+<div class="services">
+<div class="card">Akupuntur Kesehatan</div>
+<div class="card">Bekam Kering & Basah</div>
+<div class="card">Massage & Tuina</div>
+<div class="card">Akupuntur Kecantikan</div>
+<div class="card">Facial</div>
+<div class="card">Totok Wajah</div>
+</div>
+
+<a href="https://wa.me/62812xxxxxxx" class="btn">Tanya via WA</a>
+
+</section>
+
+<!-- KENAPA -->
+<section class="section" id="kenapa">
+<h2>Kenapa Pilih Inaya Akupuntur?</h2>
+
+<div class="services">
+<div class="card">✔ Terapis berpengalaman</div>
+<div class="card">✔ Alat steril & aman</div>
+<div class="card">✔ Harga terjangkau</div>
+<div class="card">✔ Konsultasi GRATIS via WA</div>
+</div>
+
+<a href="https://wa.me/62812xxxxxxx" class="btn">Konsultasi Sekarang</a>
+
+</section>
+
+<!-- TESTIMONI -->
+<section class="section" id="testimoni">
+<h2>Testimoni</h2>
+
+<div class="services">
+<div class="card">⭐⭐⭐⭐⭐<br>Sakit pinggang jadi ringan</div>
+<div class="card">⭐⭐⭐⭐⭐<br>Migrain berkurang</div>
+<div class="card">⭐⭐⭐⭐⭐<br>Pelayanan ramah</div>
+</div>
+
+<a href="https://wa.me/62812xxxxxxx" class="btn">Booking Sekarang</a>
+
+</section>
+
+<!-- LEGAL -->
+<section class="section legal" id="legalitas">
+<h2>Legalitas</h2>
+
+<img src="111.png">
+<img src="222.png">
+
+</section>
+
+<!-- KONTAK -->
+<section class="section" id="kontak">
+<h2>Kontak</h2>
+<p>📍 Slawi</p>
+<p>📞 0812-XXXX-XXXX</p>
+<p>🕒 09.00 - 21.00</p>
+
+<a href="https://wa.me/62812xxxxxxx" class="btn">Chat WA</a>
+
+</section>
+
+<!-- MAP -->
+<section class="section map">
+<h2>Lokasi</h2>
+<iframe src="https://www.google.com/maps?q=Slawi&output=embed"></iframe>
+</section>
+
+<footer>
+<p>© 2026 Inaya Akupuntur Slawi</p>
+</footer>
+
+<a href="https://wa.me/62812xxxxxxx" class="wa">💬</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
